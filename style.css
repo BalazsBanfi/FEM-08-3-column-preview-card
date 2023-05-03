@@ -20,7 +20,6 @@
 ******************/
 
 body {
-  font-size: 15px;
   background-color: var(--vLightGray);
   display: grid;
   place-items: center;
