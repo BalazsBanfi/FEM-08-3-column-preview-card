@@ -20,7 +20,7 @@
 ******************/
 
 body {
-  background-color: white;
+  background-color: var(--vLightGray);
   display: grid;
   place-items: center;
   text-align: left;
@@ -45,8 +45,62 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 /******************
 ***Items section***
 *******************/
+
+.container div:nth-child(1) {
+  background-color: var(--brightOrange);
+}
+
+.container div:nth-child(1) > button {
+  color: var(--brightOrange);
+}
+
+.container div:nth-child(2) {
+  background-color: var(--darkCyan);
+}
+
+.container div:nth-child(2) > button {
+  color: var(--darkCyan);
+}
+
+.container div:nth-child(3) {
+  background-color: var(--vDarkCyan);
+}
+
+.container div:nth-child(3) > button {
+  color: var(--vDarkCyan);
+}
+.items {
+  padding: 3rem;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img {
+  width: 50px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--vLightGray);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--trWhite);
+}
+
+button {
+  width: 70%;
+  padding: 1.5rem;
+  border-radius: 50px;
+}
